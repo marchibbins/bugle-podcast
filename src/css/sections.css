@@ -1,0 +1,35 @@
+.section {
+    padding: 1em;
+    text-align: center;
+}
+
+.section__inner {
+    max-width: 1015px;
+    margin: 0 auto;
+    padding: 0 10px;
+    min-height: 1em;
+}
+
+.section__title {
+    color: $orange;
+    text-transform: uppercase;
+}
+
+.section--orange {
+    background-color: $orange;
+
+    .section__title {
+        color: $grey;
+    }
+}
+
+.section--header {
+    .section__title {
+        color: white;
+    }
+}
+
+.section--subscribe {
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+}

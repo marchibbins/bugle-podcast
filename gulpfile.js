@@ -1,10 +1,15 @@
 var gulp = require('gulp');
-var postcss = require('gulp-postcss');
+var postCss = require('gulp-postcss');
+var postCssImport = require('postcss-import');
+var postCssPre = require('precss');
 
 gulp.task('css', function () {
-    return gulp.src('./src/**/*.css')
-        .pipe(postcss([ require('precss')]))
-        .pipe(gulp.dest('./build/'));
+    return gulp.src('./src/css/index.css')
+    .pipe(postCss([
+      postCssImport(),
+      postCssPre()
+    ]))
+    .pipe(gulp.dest('./build/css/'));
 });
 
 gulp.task('watch', function () {

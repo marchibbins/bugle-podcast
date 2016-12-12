@@ -1,0 +1,16 @@
+.nav {
+    background-color: $dark-grey;
+    padding: 50px 75px;
+}
+
+.nav__item {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 20px
+}
+
+.nav__item--brand {
+    color: $orange;
+    float: right;
+    margin-right: 0;
+}

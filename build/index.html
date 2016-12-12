@@ -1,91 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
     <title>The Bugle</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
     <nav class="nav" role="navigation">
-        <ul>
-            <li><a href="#show">Show</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#subscribe">Subscribe</a></li>
-            <li><a href="#donate">Donate</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>The Bugle Podcast</li>
+        <ul class="unstyled">
+            <li class="unstyled__item">
+                <a class="nav__item" href="#show">Show</a>
+            </li>
+            <li class="unstyled__item">
+                <a class="nav__item" href="#about">About</a>
+            </li>
+            <li class="unstyled__item">
+                <a class="nav__item" href="#subscribe">Subscribe</a>
+            </li>
+            <li class="unstyled__item">
+                <a class="nav__item" href="#donate">Donate</a>
+            </li>
+            <li class="unstyled__item">
+                <a class="nav__item" href="#newsletter">Newsletter</a>
+            </li>
+            <li class="unstyled__item">
+                <a class="nav__item" href="#contact">Contact</a>
+            </li>
+            <li class="unstyled__item">
+                <span class="nav__item nav__item--brand">The Bugle Podcast</span>
+            </li>
         </ul>
     </nav>
     <main role="main">
-        <header role="banner">
-            <h1>The Bugle</h1>
-            <h2>Audio Newspaper For A Visual World Since 2007</h2>
-            <p>Listen with:
-                <ul>
-                    <li><a href="#">iTunes</a></li>
-                    <li><a href="#">Soundcloud</a></li>
-                    <li><a href="#">Feedburner</a></li>
+        <header class="section section--header" role="banner">
+            <div class="section__inner">
+                <h1 class="section__title">The Bugle</h1>
+                <h2 class="section__subtitle">Audio Newspaper For A Visual World Since 2007</h2>
+                <div>Listen with:
+                    <ul class="unstyled unstyled--piped">
+                        <li class="unstyled__item">
+                            <a class="subscribe-link" href="#">iTunes</a>
+                        </li>
+                        <li class="unstyled__item">
+                            <a class="subscribe-link" href="#">Soundcloud</a>
+                        </li>
+                        <li class="unstyled__item">
+                            <a class="subscribe-link" href="#">Feedburner</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="unstyled">
+                    <li class="unstyled__item">
+                        <a class="button" href="#">Twitter</a>
+                    </li>
+                    <li class="unstyled__item">
+                        <a class="button" href="#">Facebook</a>
+                    </li>
                 </ul>
-            </p>
-            <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
+            </div>
         </header>
-        <section>
-            <h2>Latest show</h2>
-            <p>Listen to the latest blast of premium-calibre satirical hogwash.</p>
-            <p>Download from
-                <ul>
-                    <li><a href="#">iTunes</a></li>
-                    <li><a href="#">Soundcloud</a></li>
-                    <li><a href="#">Feedburner</a></li>
+        <section id="show" class="section section--orange">
+            <div class="section__inner">
+                <h2 class="section__title">Latest show</h2>
+                <p>Listen to the latest blast of premium-calibre satirical hogwash.</p>
+                <p>Download from <a class="subscribe-link" href="#">iTunes</a></p>
+                <!-- Soundcloud player -->
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="section__inner">
+                <h3 class="section__title">About</h3>
+                <p>The Bugle, one of the universe's leading satirical comedy podcasts, featuring John Oliver and Andy Zaltzman, lives on.</p>
+                <p>Since it's birth in October 2007, John and Andy have dispensed their weekly doses of satire and bullshit to an estimated potential global audience of 7 billion people. They have left no political hot potato unbettered, and have presided over, and/or caused, and/or commented on (delete according to preference) the downfall of several of the world's leat desirable despots and dinner companions.</p>
+                <p>After four years and 178 full issues (plus sundry extra sub-episodes) hosted by Times Online, The Bugle is now independent, and hoping to carry on Bugling until the end of time (logistics permitting).</p>
+                <ul class="unstyled">
+                    <li class="unstyled__item">
+                        <a class="button" href="#">Twitter</a>
+                    </li>
+                    <li class="unstyled__item">
+                        <a class="button" href="#">Facebook</a>
+                    </li>
                 </ul>
-            </p>
-            <!-- Soundcloud player -->
+            </div>
         </section>
-        <section>
-            <h3>About</h3>
-            <p>The Bugle, one of the universe's leading satirical comedy podcasts, featuring John Oliver and Andy Zaltman, lives on.</p>
-            <p>Since it's birth in October 2007, John and Andy have dispensed their weekly doses of satire and bullshit to an estimated potential global audience of 7 billion people. They have left no political hot potato unbettered, and have presided over, and/or caused, and/or commented on (delete according to preference) the downfall of several of the world's leat desirable despots and dinner companions.</p>
-            <p>After four years and 178 full issues (plus sundry extra sub-episodes) hosted by Times Online, The Bugle is now independent, and hoping to carry on Bugling until the end of time (logistics permitting).</p>
-            <ul>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-            </ul>
+        <section id="subscribe" class="section section--subscribe">
+            <div class="section__inner">
+                <h3 class="section__title">Subscribe</h3>
+                <a href="#">iTunes</a>
+                <p>Our shows are now available for download on the following platforms</p>
+                <ul class="unstyled unstyled--piped">
+                    <li class="unstyled__item">
+                        <a class="subscribe-link" href="#">iTunes</a>
+                    </li>
+                    <li class="unstyled__item">
+                        <a class="subscribe-link" href="#">Soundcloud</a>
+                    </li>
+                    <li class="unstyled__item">
+                        <a class="subscribe-link" href="#">Feedburner</a>
+                    </li>
+                    <li class="unstyled__item">
+                        <a class="subscribe-link" href="#">Stitcher</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h3>Subscribe</h3>
-            <a href="#">iTunes</a>
-            <p>Our shows are now available for download on iTunes</p>
-            <a href="#">Subscribe Here></a>
+        <section id="voices" class="section">
+            <div class="section__inner">
+                <h3 class="section__title">The voices</h3>
+                <ul class="unstyled">
+                    <li class="unstyled__item">Andy Zaltzman</li>
+                    <li class="unstyled__item">Nish Kumar</li>
+                    <li class="unstyled__item">Hari Kondabolu</li>
+                    <li class="unstyled__item">Helen Zaltzman</li>
+                    <li class="unstyled__item">Wyatt Cenac</li>
+                    <li class="unstyled__item">Anuvab Pal</li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h3>Donate</h3>
-            <p>We're very grateful for your support. Our show is part of PRX's Radiotopia ― a collective of wonderful shows you can check out at <a href="http://radiotopia.fm">radiotopia.fm</a>. PRX is a tax-exempt organization and so your donation could qualify as a tax deduction. You will recieve an email receipt. Thank you.</p>
-            <a href="#">Please Donate</a>
+        <section id="newsletter" class="section section--orange">
+            <div class="section__inner">
+                <h3 class="section__title">Newsletter</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+            </div>
         </section>
-        <section>
-            <h3>Newsletter</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+        <section id="donate" class="section">
+            <div class="section__inner">
+                <h3 class="section__title">Donate</h3>
+                <p>We're very grateful for your support. Our show is part of PRX's Radiotopia ― a collective of wonderful shows you can check out at <a href="http://radiotopia.fm">radiotopia.fm</a>. PRX is a tax-exempt organization and so your donation could qualify as a tax deduction. You will recieve an email receipt. Thank you.</p>
+                <a href="#">Please Donate</a>
+            </div>
         </section>
-        <section>
-            <h3>Contact</h3>
-            <p>If you wish to get in contact with the show please email <a href="mailto:info@thebuglepodcast.com">info@thebuglepodcast.com</a></p>
-            <p>If you would like to support the show or have a business enquiry please email <a href="mailto:support@thebuglepodcast.com">support@thebuglepodcast.com</a></p>
+        <section id="contact" class="section section--orange">
+            <div class="section__inner">
+                <h3 class="section__title">Contact</h3>
+                <p>If you wish to get in contact with the show please email <a href="mailto:info@thebuglepodcast.com">info@thebuglepodcast.com</a></p>
+                <p>If you would like to support the show or have a business enquiry please email <a href="mailto:support@thebuglepodcast.com">support@thebuglepodcast.com</a></p>
+            </div>
         </section>
     </main>
-    <footer role="contentinfo">
-        <small>Copyright &copy; The Bugle 2016</small>
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
+    <footer class="section footer" role="contentinfo">
+        <div class="section__inner">
+            <small class="footer__left">Copyright &copy; The Bugle 2016</small>
+            <ul class="unstyled footer__right">
+                <li class="unstyled__item"><a href="#">Twitter</a></li>
+                <li class="unstyled__item"><a href="#">Facebook</a></li>
+                <li class="unstyled__item"><a href="#">Instagram</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
