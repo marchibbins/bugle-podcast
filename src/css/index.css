@@ -1,7 +1,10 @@
 @import 'vars';
 @import 'normalize';
+@import 'fonts';
 @import 'global';
+@import 'lists';
 @import 'nav';
 @import 'buttons';
 @import 'sections';
 @import 'footer';
+@import 'icons';

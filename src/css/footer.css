@@ -1,5 +1,11 @@
 .footer {
-    padding: 1em;
+    min-height: 20px;
+    padding: 2.5rem;
+}
+
+.footer__copy {
+    font-size: 0.6875rem;
+    line-height: 1.25rem;
 }
 
 .footer__left {

@@ -1,9 +1,13 @@
 body {
-    background-color: $grey;
-    font-family: Helvetica, Arial, sans-serif;
+    background-color: $blue;
+    font-family: $font-light;
     font-size: 16px;
     line-height: 1.25;
     color: white;
+}
+
+h1, h2, h3 {
+    font-family: $font-bold;
 }
 
 a {
@@ -13,35 +17,33 @@ a {
     &:hover,
     &:focus,
     &:active {
-        text-decoration: underline;
+        border-bottom: 1px solid white;
     }
+}
+
+.container {
+    max-width: 63.5rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.newsletter-link {
+    font-family: $font-bold;
+    color: $blue;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $blue;
+    }
+
+}
+
+.social-link {
+    margin-left: 1rem;
 }
 
 .subscribe-link {
     text-transform: uppercase;
-}
-
-.unstyled {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.unstyled__item {
-    display: inline;
-}
-
-.unstyled--piped {
-    display: inline-block;
-
-    .unstyled__item {
-        &:after {
-            content: '|';
-            margin-left: 5px;
-        }
-
-        &:last-child:after {
-            display: none;
-        }
-    }
 }

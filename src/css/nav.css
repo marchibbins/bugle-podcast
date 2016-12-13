@@ -1,12 +1,14 @@
 .nav {
     background-color: $dark-grey;
-    padding: 50px 75px;
+    padding: 3.125rem 5rem;
 }
 
 .nav__item {
+    font-family: $font-bold;
+    font-size: 0.875rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 20px
+    margin-right: 1rem;
 }
 
 .nav__item--brand {

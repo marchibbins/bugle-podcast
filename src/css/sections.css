@@ -1,35 +1,105 @@
 .section {
-    padding: 1em;
+    font-size: 1.125rem;
     text-align: center;
-}
+    padding-top: 5rem;
+    padding-bottom: 4.375rem;
 
-.section__inner {
-    max-width: 1015px;
-    margin: 0 auto;
-    padding: 0 10px;
-    min-height: 1em;
+    p {
+        max-width: 38.125rem;
+        margin: 1.125rem auto;
+    }
 }
 
 .section__title {
+    font-size: 2.25rem;
+    margin: 0 auto 5rem;
     color: $orange;
     text-transform: uppercase;
+
+    @media (min-width: $breakpoint) {
+        font-size: 3.5rem;
+    }
+}
+
+.section__subtitle {
+    font-size: 1.25rem;
+    font-family: $font-light;
+    margin: 0;
 }
 
 .section--orange {
     background-color: $orange;
 
     .section__title {
-        color: $grey;
+        color: $blue;
     }
 }
 
 .section--header {
+    background-image: url(../images/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     .section__title {
+        font-size: 3rem;
         color: white;
+        margin: 0;
+
+        @media (min-width: $breakpoint) {
+            font-size: 10rem;
+        }
     }
 }
 
+.section--latest {
+    padding-bottom: 26.875rem;
+    background-image: url(../images/logo-full.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 7.25rem;
+}
+
 .section--subscribe {
-    border-top: 2px solid $orange;
-    border-bottom: 2px solid $orange;
+    border-top: 0.25rem solid $orange;
+    border-bottom: 0.25rem solid $orange;
+    background-image: url(../images/subscribe.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        padding-bottom: 13.125rem;
+        background-image: url(../images/platforms.png);
+        background-repeat: no-repeat;
+        background-position: center bottom 1.875rem;
+        background-size: 670px;
+    }
+}
+
+.section--donate {
+    padding-bottom: 16.875rem;
+    background-image: url(../images/radiotopia.png);
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: center bottom 5.625rem;
+
+    a {
+        color: $orange;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $orange;
+        }
+    }
+}
+
+.section--contact {
+    padding-bottom: 18.75rem;
+    background-image: url(../images/logo-half.png);
+    background-repeat: no-repeat;
+    background-size: 215px;
+    background-position: center bottom 7.25rem;
 }

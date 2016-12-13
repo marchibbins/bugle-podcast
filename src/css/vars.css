@@ -1,3 +1,8 @@
+$font-bold: 'MontserratBold', sans-serif;
+$font-light: 'MontserratLight', sans-serif;
+
 $dark-grey: #1a1d23;
-$grey: #282e3b;
+$blue: #282e3b;
 $orange: #f1582d;
+
+$breakpoint: 768px;

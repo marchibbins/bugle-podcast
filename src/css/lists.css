@@ -1,0 +1,24 @@
+.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.unstyled__item {
+    display: inline;
+}
+
+.unstyled--piped {
+    font-family: $font-bold;
+    display: inline-block;
+
+    .unstyled__item {
+        &:after {
+            content: '|';
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+}
