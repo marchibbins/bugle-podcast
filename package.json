@@ -1,6 +1,7 @@
 {
   "private": true,
   "devDependencies": {
+    "autoprefixer": "^6.5.4",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.2.0",
     "postcss-import": "^9.0.0",

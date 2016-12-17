@@ -1,0 +1,33 @@
+.voices {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.voices__item {
+    flex: auto;
+}
+
+.voices__person {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.5rem;
+}
+
+.voices__title {
+    margin: 0;
+    padding: 1.25rem;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: $dark-grey;
+}
+
+.voices__image {
+    height: 14.0625rem;
+    min-width: 15rem;
+    max-width: 100%;
+
+    @media (min-width: $break-large) {
+        height: 18rem;
+        min-width: 16.875rem;
+    }
+}

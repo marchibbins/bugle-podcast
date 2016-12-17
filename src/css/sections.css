@@ -16,7 +16,7 @@
     color: $orange;
     text-transform: uppercase;
 
-    @media (min-width: $breakpoint) {
+    @media (min-width: $break-mid) {
         font-size: 3.5rem;
     }
 }
@@ -28,8 +28,8 @@
 }
 
 .section__image {
-    margin-top: 4.375rem;
-    margin-bottom: 1rem;
+    display: block;
+    margin: 4.375rem auto 1rem;
     max-width: 100%;
 }
 
