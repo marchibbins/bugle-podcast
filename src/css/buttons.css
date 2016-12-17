@@ -1,10 +1,14 @@
 .button {
     display: inline-block;
     border: 1px solid white;
-    margin: 3.75rem 1.375rem;
     padding: 0.25rem 0.5rem;
     font-size: 0.9375rem;
     text-transform: uppercase;
+    margin-top: 1rem;
+
+    @media (min-width: $break-mid) {
+        margin: 3.75rem 1.375rem;
+    }
 
     &:hover,
     &:focus,

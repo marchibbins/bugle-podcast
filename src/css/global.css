@@ -27,10 +27,6 @@ a {
     padding: 0 1rem;
 }
 
-.soundcloud {
-    margin-top: 5rem;
-}
-
 .newsletter-link {
     font-family: $font-bold;
     color: $blue;
@@ -41,13 +37,12 @@ a {
     &:active {
         border-color: $blue;
     }
-
-}
-
-.social-link {
-    margin-left: 1rem;
 }
 
 .subscribe-link {
     text-transform: uppercase;
+}
+
+.soundcloud {
+    margin-top: 5rem;
 }

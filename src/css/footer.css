@@ -6,12 +6,23 @@
 .footer__copy {
     font-size: 0.6875rem;
     line-height: 1.25rem;
+    display: inline-block;
 }
 
-.footer__left {
-    float: left;
+.social-link {
+    margin: 1rem 0.5rem;
+
+    @media (min-width: $break-mid) {
+        margin: 0 0 0 1rem;
+    }
 }
 
-.footer__right {
-    float: right;
+@media (min-width: $break-mid) {
+    .footer__left {
+        float: left;
+    }
+
+    .footer__right {
+        float: right;
+    }
 }

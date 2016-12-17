@@ -49,11 +49,11 @@
     background-size: cover;
 
     .section__title {
-        font-size: 3rem;
+        font-size: 14vw;
         color: white;
         margin: 0;
 
-        @media (min-width: $break-mid) {
+        @media (min-width: $break-large) {
             font-size: 10rem;
         }
     }
