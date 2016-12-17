@@ -5,4 +5,5 @@ $dark-grey: #1a1d23;
 $blue: #282e3b;
 $orange: #f1582d;
 
-$breakpoint: 768px;
+$break-mid: 768px;
+$break-large: 1024px;

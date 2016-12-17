@@ -1,12 +1,22 @@
 .nav {
     background-color: $dark-grey;
-    padding: 3.125rem 5rem;
-}
-
-.nav__item {
+    display: none;
+    padding: 3.125rem 1rem;
     font-family: $font-bold;
     font-size: 0.875rem;
     font-weight: bold;
+
+    @media (min-width: $break-mid) {
+        display: block;
+    }
+
+    @media (min-width: $break-large) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+.nav__item {
     text-transform: uppercase;
     margin-right: 1rem;
 }

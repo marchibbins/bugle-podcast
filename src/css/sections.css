@@ -53,7 +53,7 @@
         color: white;
         margin: 0;
 
-        @media (min-width: $breakpoint) {
+        @media (min-width: $break-mid) {
             font-size: 10rem;
         }
     }
