@@ -27,6 +27,12 @@
     margin: 0;
 }
 
+.section__image {
+    margin-top: 4.375rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
 .section--orange {
     background-color: $orange;
 
@@ -53,13 +59,6 @@
     }
 }
 
-.section--latest {
-    padding-bottom: 26.875rem;
-    background-image: url(../images/logo-full.png);
-    background-repeat: no-repeat;
-    background-position: center bottom 7.25rem;
-}
-
 .section--subscribe {
     border-top: 0.25rem solid $orange;
     border-bottom: 0.25rem solid $orange;
@@ -68,23 +67,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    .container {
-        padding-bottom: 13.125rem;
-        background-image: url(../images/platforms.png);
-        background-repeat: no-repeat;
-        background-position: center bottom 1.875rem;
-        background-size: 670px;
-    }
 }
 
 .section--donate {
-    padding-bottom: 16.875rem;
-    background-image: url(../images/radiotopia.png);
-    background-repeat: no-repeat;
-    background-size: 380px;
-    background-position: center bottom 5.625rem;
-
     a {
         color: $orange;
 
@@ -94,12 +79,4 @@
             border-color: $orange;
         }
     }
-}
-
-.section--contact {
-    padding-bottom: 18.75rem;
-    background-image: url(../images/logo-half.png);
-    background-repeat: no-repeat;
-    background-size: 215px;
-    background-position: center bottom 7.25rem;
 }
