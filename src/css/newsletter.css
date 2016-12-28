@@ -1,0 +1,61 @@
+.newsletter-link {
+    font-family: $font-bold;
+    color: $blue;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $blue;
+    }
+}
+
+.section--newsletter {
+    @media (min-width: $break-wide) {
+        .container {
+            min-height: 500px;
+            position: relative;
+        }
+
+        .section__title {
+            font-size: 3rem;
+        }
+
+        p {
+            max-width: 25rem;
+        }
+    }
+}
+
+.widgets {
+    margin-top: 1rem;
+}
+
+.widgets__container {
+    max-width: 21.25rem;
+    max-width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 1em;
+
+    @media (min-width: $break-mid) {
+        margin: 1em;
+    }
+
+    @media (min-width: $break-wide) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+
+        &:first-child {
+            right: auto;
+            left: 0;
+        }
+    }
+
+    .twitter-timeline,
+    .fb-page {
+        float: left;
+    }
+}

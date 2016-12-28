@@ -27,18 +27,6 @@ a {
     padding: 0 1rem;
 }
 
-.newsletter-link {
-    font-family: $font-bold;
-    color: $blue;
-    text-transform: uppercase;
-
-    &:hover,
-    &:focus,
-    &:active {
-        border-color: $blue;
-    }
-}
-
 .subscribe-link {
     text-transform: uppercase;
 }
