@@ -42,6 +42,7 @@
 }
 
 .section--header {
+    position: relative;
     background-image: url(../images/header.jpg);
     background-attachment: fixed;
     background-position: center;
