@@ -19,7 +19,7 @@
     <meta property="og:image" content="images/bugle-landscape.png">
 </head>
 <body>
-    <nav class="nav" role="navigation">
+    <nav id="nav" class="nav" role="navigation">
         <ul class="unstyled">
             <li class="unstyled__item">
                 <a class="nav__item" href="#show" data-scroll>Show</a>
@@ -275,6 +275,18 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
     <script>
         smoothScroll.init();
+        var pageTop = true;
+        var pageScroll = 550;
+        var nav = document.getElementById('nav');
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > pageScroll && pageTop === true) {
+            nav.className += " thin";
+            pageTop = false;
+          } else if (window.scrollY < pageScroll && pageTop === false) {
+            nav.className = "nav";
+            pageTop = true;
+          }
+        });
     </script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div id="fb-root"></div>

@@ -4,6 +4,11 @@ body {
     font-size: 16px;
     line-height: 1.25;
     color: white;
+
+    @media (min-width: $break-mid) {
+        /* Fixed nav */
+        padding-top: 7.25rem;
+    }
 }
 
 h1, h2, h3 {
