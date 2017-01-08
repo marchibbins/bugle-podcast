@@ -275,16 +275,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
     <script>
         smoothScroll.init();
-        var pageTop = true;
-        var pageScroll = 550;
         var nav = document.getElementById('nav');
+        var show = document.getElementById('show');
+        var showTop = show.offsetTop - nav.offsetHeight;
         window.addEventListener('scroll', function() {
-          if (window.scrollY > pageScroll && pageTop === true) {
+          if (window.scrollY > showTop && nav.className === 'nav') {
             nav.className += " thin";
-            pageTop = false;
-          } else if (window.scrollY < pageScroll && pageTop === false) {
+          } else if (window.scrollY < showTop && nav.className.indexOf('thin') > -1) {
             nav.className = "nav";
-            pageTop = true;
           }
         });
     </script>
