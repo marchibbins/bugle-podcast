@@ -54,16 +54,6 @@
       top: 18.5rem;
   }
 
-  a {
-    color: $orange;
-
-    &:hover,
-    &:focus,
-    &:active {
-        border-color: $orange;
-    }
-  }
-
   p {
     font-size: 0.875rem;
   }

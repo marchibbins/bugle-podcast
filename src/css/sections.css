@@ -78,15 +78,3 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.section--donate {
-    a {
-        color: $orange;
-
-        &:hover,
-        &:focus,
-        &:active {
-            border-color: $orange;
-        }
-    }
-}
