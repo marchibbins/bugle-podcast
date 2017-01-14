@@ -32,8 +32,8 @@
     margin-right: 1rem;
 }
 
-.nav__item--brand {
-    @media (min-width: $break-mid) {
+@media (min-width: $break-mid) {
+  .nav__item--brand {
       float: right;
       margin-right: 0;
     }

@@ -99,9 +99,9 @@
 
   .nav__menu li {
       display: block;
-      padding: 10px 5px;
+      padding: 8px 5px 10px;
       text-align: right;
-      font-size: 22px;
+      font-size: 20px;
 
       &:last-child {
 
