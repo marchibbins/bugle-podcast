@@ -36,4 +36,10 @@
     color: $orange;
     float: right;
     margin-right: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $orange;
+    }
 }
