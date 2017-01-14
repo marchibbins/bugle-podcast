@@ -138,7 +138,7 @@
                 <h3 class="section__title">The voices</h3>
                 <ul class="unstyled voices">
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Andy Zaltzman</h4>
                                 <p>The original voice of The Bugle. He can pun for fun. You can hear Andy Satirising for hire around the world, ticket info via <a href="http://andyzaltzman.co.uk/" class="orange-link" target="_blank" rel="noopener noreferrer">http://andyzaltzman.co.uk/</a>.</p>
@@ -151,7 +151,7 @@
                         </article>
                     </li>
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Nish Kumar</h4>
                                 <p>Massively hip UK comedian loved by The Guardian and Stewart Lee. Made his Bugle debut telling Producer Chris to F*** himself, a cheap shot that won him instant acclaim.</p>
@@ -164,7 +164,7 @@
                         </article>
                     </li>
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Hari Kondabolu</h4>
                                 <p>Spreading The Bugle’s love of royalty into the new era, Hari is from Queens. He broke all kinds of records by becoming the third person ever to co-host The Bugle, the first new co-host in 9 years.</p>
@@ -177,7 +177,7 @@
                         </article>
                     </li>
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Helen Zaltzman</h4>
                                 <p>Helen is a podcasting legend. Ask her about podcasting, or Serial. With hits like Answer Me This and Radiotopia’s The Allusionist under her belt, her joining The Bugle is an issue the competition commission should have an issue with. Yes, she is Andy’s sister.</p>
@@ -190,7 +190,7 @@
                         </article>
                     </li>
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Wyatt Cenac</h4>
                                 <p>A former five time Wimbledon champion, Wyatt has written for TV shows like King of The Hill and was a regular correspondent on the Daily Show. His vote for US President is with McDonalds worker Rochelle.</p>
@@ -203,7 +203,7 @@
                         </article>
                     </li>
                     <li class="unstyled__item voices__item">
-                        <article class="voices__person">
+                        <article class="voices__person touch-hover">
                             <div class="voices__info">
                                 <h4 class="voices__title">Anuvab Pal</h4>
                                 <p>Anuvab Pal is a modern polymath, having managed to pursue successful careers in the theatre, comedy, literature and cinema. He is apparently one of the five funniest people in India, and India has a lot of people, a ringing endorsement.</p>
@@ -277,7 +277,10 @@
     <script src="http://pixelcog.github.io/parallax.js/js/parallax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.2.1/js/smooth-scroll.min.js"></script>
     <script>
+        // Scroll
         smoothScroll.init();
+
+        // Nav
         var nav = document.getElementById('nav');
         var show = document.getElementById('show');
         var showTop = show.offsetTop - nav.offsetHeight;
@@ -290,13 +293,27 @@
         }
         navSize();
         window.addEventListener('scroll', navSize);
+
+        // Burger
         var navItems = document.querySelectorAll('.nav__item');
         for (var i = 0; i < navItems.length; i++) {
             navItems[i].addEventListener('click', function() {
-              console.log(document.getElementById('toggle'))
                 document.getElementById('toggle').checked = false;
             });
         }
+
+        // Touch
+        $(document).ready(function() {
+            $('.touch-hover').bind('touchstart', function(event) {
+                if (event.target.nodeName === 'A') return;
+                event.preventDefault();
+                var toggle = !$(this).hasClass('hover');
+                $('.hover').removeClass('hover');
+                if (toggle) {
+                    $(this).toggleClass('hover');
+                }
+            });
+        });
     </script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div id="fb-root"></div>
