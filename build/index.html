@@ -31,10 +31,10 @@
                 <a class="nav__item" href="#subscribe" data-scroll>Subscribe</a>
             </li>
             <li class="unstyled__item">
-                <a class="nav__item" href="#donate" data-scroll>Donate</a>
+                <a class="nav__item" href="#newsletter" data-scroll>Newsletter</a>
             </li>
             <li class="unstyled__item">
-                <a class="nav__item" href="#newsletter" data-scroll>Newsletter</a>
+                <a class="nav__item" href="#donate" data-scroll>Donate</a>
             </li>
             <li class="unstyled__item">
                 <a class="nav__item" href="#contact" data-scroll>Contact</a>
@@ -278,13 +278,15 @@
         var nav = document.getElementById('nav');
         var show = document.getElementById('show');
         var showTop = show.offsetTop - nav.offsetHeight;
-        window.addEventListener('scroll', function() {
+        var navSize = function() {
           if (window.scrollY > showTop && nav.className === 'nav') {
             nav.className += " thin";
           } else if (window.scrollY < showTop && nav.className.indexOf('thin') > -1) {
             nav.className = "nav";
           }
-        });
+        }
+        navSize();
+        window.addEventListener('scroll', navSize);
     </script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div id="fb-root"></div>
