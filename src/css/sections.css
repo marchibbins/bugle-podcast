@@ -42,21 +42,20 @@
 }
 
 .section--header {
+    position: relative;
     padding: 0;
-    height: 95vh;
-    height: calc(100vh - 7.25rem);
+    height: 450px;
+
+    @media (min-width: $break-mid) {
+        height: 95vh;
+        height: calc(100vh - 7.25rem);
+    }
 
     > .container {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
     }
-
-    position: relative;
-    background-image: url(../images/header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
     .section__title {
         font-size: 14vw;
