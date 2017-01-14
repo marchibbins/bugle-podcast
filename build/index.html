@@ -20,7 +20,11 @@
 </head>
 <body id="top">
     <nav id="nav" class="nav" role="navigation">
-        <ul class="unstyled">
+        <input id="toggle" type="checkbox" class="toggle"/>
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <span class="burger"></span>
+        <ul class="unstyled nav__menu">
             <li class="unstyled__item">
                 <a class="nav__item" href="#show" data-scroll>Show</a>
             </li>
@@ -276,14 +280,21 @@
         var show = document.getElementById('show');
         var showTop = show.offsetTop - nav.offsetHeight;
         var navSize = function() {
-          if (window.scrollY > showTop && nav.className === 'nav') {
-            nav.className += " thin";
-          } else if (window.scrollY < showTop && nav.className.indexOf('thin') > -1) {
-            nav.className = "nav";
-          }
+            if (window.scrollY > showTop && nav.className === 'nav') {
+                nav.className += " thin";
+            } else if (window.scrollY < showTop && nav.className.indexOf('thin') > -1) {
+                nav.className = "nav";
+            }
         }
         navSize();
         window.addEventListener('scroll', navSize);
+        var navItems = document.querySelectorAll('.nav__item');
+        for (var i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener('click', function() {
+              console.log(document.getElementById('toggle'))
+                document.getElementById('toggle').checked = false;
+            });
+        }
     </script>
     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <div id="fb-root"></div>

@@ -1,24 +1,24 @@
 .nav {
     background-color: $dark-grey;
-    display: none;
-    padding: 3.125rem 1rem;
+    padding: 1.25rem 0;
     transition: padding 250ms;
     font-family: $font-bold;
     font-size: 0.875rem;
     font-weight: bold;
 
-    &.thin {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-    }
-
     @media (min-width: $break-mid) {
         position: fixed;
+        padding: 3.125rem 1rem;
         z-index: 10;
         top: 0;
         left: 0;
         right: 0;
         display: block;
+
+        &.thin {
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+        }
     }
 
     @media (min-width: $break-large) {
@@ -33,6 +33,8 @@
 }
 
 .nav__item--brand {
-    float: right;
-    margin-right: 0;
+    @media (min-width: $break-mid) {
+      float: right;
+      margin-right: 0;
+    }
 }
