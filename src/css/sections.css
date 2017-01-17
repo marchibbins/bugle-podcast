@@ -7,6 +7,8 @@
     p {
         max-width: 38.125rem;
         margin: 1.125rem auto;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 }
 
@@ -44,12 +46,8 @@
 .section--header {
     position: relative;
     padding: 0;
-    height: 450px;
-
-    @media (min-width: $break-mid) {
-        height: 95vh;
-        height: calc(100vh - 7.25rem);
-    }
+    height: 55vw;
+    min-height: 26rem;
 
     > .container {
         position: relative;
