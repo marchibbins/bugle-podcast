@@ -69,3 +69,13 @@ a {
 .soundcloud {
     margin-top: 5rem;
 }
+
+.commitchange-donate {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+
+  iframe {
+    border: none;
+  }
+}

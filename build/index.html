@@ -243,13 +243,14 @@
                 <p>Did you know you can donate to or sponsor The Bugle.</p>
                 <p>The Bugle is a proud part of <a href="http://radiotopia.fm" class="orange-link" target="_blank" rel="noopener noreferrer">radiotopia.fm</a>, from <a href="http://www.prx.org/" class="orange-link" target="_blank" rel="noopener noreferrer">PRX</a>, a curated network of extraordinary, cutting-edge podcasts.</p>
                 <p>Email <a href="mailto:sponsor@radiotopia.fm" class="orange-link">sponsor@radiotopia.fm</a> if you work for a brand who would beneﬁt from being a part of this nonsense.</p>
+                <a class="commitchange-donate" data-designation="The Bugle"></a>
                 <img class="section__image" src="images/radiotopia.png" width="380">
             </div>
         </section>
         <section id="contact" class="section section--orange section--contact">
             <div class="container">
                 <h3 class="section__title">Contact</h3>
-                <p>If you wish to get in contact with the show please email <a href="mailto:info@thebuglepodcast.com">info@thebuglepodcast.com</a></p>
+                <p>If you wish to get in contact with the show please email <a href="mailto:hellobuglers@thebuglepodcast.com ">hellobuglers@thebuglepodcast.com </a></p>
                 <p>If you would like to support the show or have a business inquiry please email <a href="mailto:support@thebuglepodcast.com">support@thebuglepodcast.com</a></p>
                 <img class="section__image" src="images/contact.png" width="215">
             </div>
@@ -324,5 +325,15 @@
         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+    <script>(function() {
+        if(document.getElementById('commitchange-script')) return;
+        var npo = 4341;
+        var script = document.createElement('script');
+        var first = document.getElementsByTagName('script')[0];
+        script.setAttribute('data-npo-id', npo);
+        script.id = 'commitchange-script';
+        script.src = 'https://commitchange.com/js/donate-button.v2.js';
+        first.parentNode.insertBefore(script, first);
+    })();</script>
 </body>
 </html>
